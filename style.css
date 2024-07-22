@@ -1,0 +1,709 @@
+/* Default styling */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Set the font for the entire page */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #e8f2f7; /* Light blue background color */
+}
+
+/* Navigation styling */
+.logo {
+  width: 200px; /* Set width for the logo */
+}
+
+header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically in the center */
+  background-color: #fff; /* White background for the header */
+  padding: 20px; /* Add padding around the header */
+  max-width: 100%; /* Ensure header takes full width */
+  justify-content: space-between; /* Distribute space between logo and navigation */
+}
+
+nav ul {
+  display: flex; /* Use flexbox for the navigation menu */
+  list-style: none; /* Remove default list styling */
+  gap: 20px; /* Space between menu items */
+  margin: 0; /* Remove default margin */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #1c1e53; /* Dark blue color for links */
+  font-weight: 500; /* Medium font weight */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.contact-button {
+  color: #5e3bee; /* Purple text color */
+  font-weight: 600; /* Bold font weight */
+  text-decoration: none; /* Remove underline from button */
+  border: 1px solid #5e3bee; /* Purple border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  margin-left: 20px; /* Space to the left of the button */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative; /* Position relative to position dropdown content */
+}
+
+.dropdown-content {
+  display: none; /* Hide dropdown content by default */
+  position: absolute; /* Position dropdown content absolutely */
+  background-color: #f9f9f9; /* Light background color for dropdown */
+  min-width: 160px; /* Minimum width of the dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Box shadow for dropdown */
+  z-index: 1; /* Ensure dropdown content is on top */
+}
+
+.dropdown-content a {
+  color: #1c1e53; /* Dark blue color for dropdown links */
+  padding: 12px 16px; /* Padding inside dropdown links */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Display links as block elements */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Light background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown content on hover */
+}
+
+.dropbtn::after {
+  content: "\25BC"; /* Downward arrow indicator */
+  font-size: 10px; /* Font size for arrow */
+  padding-left: 5px; /* Space between text and arrow */
+}
+
+main {
+  padding: 20px; /* Padding around main content */
+}
+
+/* Introduction/Home section */
+.intro {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between text and image */
+  color: black; /* Text color */
+  padding: 50px; /* Padding around the section */
+  gap: 50px; /* Space between text and image */
+}
+
+.intro-content {
+  flex: 1; /* Allow content to grow and take available space */
+}
+
+.intro h1 {
+  font-size: 48px; /* Large font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  line-height: 1.2; /* Line height for heading */
+}
+
+.highlight {
+  color: #5e3bee; /* Highlighted text color */
+}
+
+.intro p {
+  font-size: 18px; /* Font size for paragraphs */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 30px; /* Space below paragraphs */
+  color: #807b7b; /* Gray color for text */
+}
+
+.contact-button {
+  background-color: #5e3bee; /* Purple background for the button */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size for button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact-button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #5e3bee; /* Purple text color on hover */
+}
+
+.intro-image {
+  flex: 1; /* Allow image to grow and take available space */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center image horizontally */
+}
+
+.intro-image img {
+  max-width: 100%; /* Ensure image is responsive */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* About Section */
+.about {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  color: #e0e0e0; /* Light gray text color */
+  padding: 50px; /* Padding around the section */
+  gap: 50px; /* Space between text and image */
+}
+
+.about-text p {
+  color: rgb(95, 94, 94); /* Dark gray text color */
+  font-size: 25px; /* Font size for paragraph text */
+}
+
+.about-image {
+  flex: 1; /* Allow image to grow and take available space */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center image horizontally */
+  border: 15px solid #fff; /* White border around the image */
+  border-radius: 10px; /* Rounded corners for the image */
+  animation: UpAndDownAnimation 4s ease-in-out infinite; /* Animation effect */
+}
+
+@keyframes UpAndDownAnimation {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up by 20px */
+  }
+}
+
+.about-image img {
+  max-width: 100%; /* Ensure image is responsive */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.about-content {
+  flex: 1; /* Allow content to grow and take available space */
+}
+
+.section-title {
+  color: black; /* Text color for section titles */
+  font-size: 24px; /* Font size for section titles */
+  margin-bottom: 20px; /* Space below section titles */
+}
+
+.about p {
+  font-size: 16px; /* Font size for paragraph text */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+  color: rgb(95, 94, 94); /* Dark gray text color */
+}
+
+.read-more {
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #5e3bee; /* Purple border */
+  color: #5e3bee; /* Purple text color */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.read-more:hover {
+  background-color: #5e3bee; /* Purple background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Expertise section */
+.expertise {
+  text-align: left; /* Align text to the left */
+  padding: 50px 20px; /* Padding around the section */
+}
+
+.expertise-cards {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow cards to wrap onto new lines */
+  gap: 20px; /* Space between cards */
+  justify-content: flex-start; /* Align cards to the start */
+}
+
+.card {
+  padding: 20px; /* Padding inside each card */
+  background-color: #dfdbf1; /* Light purple background */
+  max-width: 300px; /* Maximum width of the card */
+  color: rgb(42, 42, 42); /* Dark gray text color */
+  border-radius: 10px; /* Rounded corners for the card */
+  overflow: hidden; /* Hide overflow content */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card img {
+  width: 100%; /* Make image responsive */
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Cover the image area */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Scale image on hover */
+}
+
+.card h3 {
+  color: black; /* Text color for card headings */
+  font-size: 25px; /* Font size for card headings */
+  margin-top: 15px; /* Space above the heading */
+}
+
+.card p {
+  margin-top: 10px; /* Space above paragraph text */
+}
+
+/* Skills section */
+.skills {
+  padding: 50px 20px; /* Padding around the section */
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.skills-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space between skill categories */
+  gap: 50px; /* Space between skill categories */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.technical-skills,
+.non-technical-skills {
+  flex: 1; /* Allow each category to grow and take available space */
+}
+
+.technical-skills h3,
+.non-technical-skills h3 {
+  font-size: 24px; /* Font size for category headings */
+  margin-bottom: 20px; /* Space below category headings */
+  color: #5e3bee; /* Purple color for category headings */
+}
+
+.skill-bar {
+  margin-bottom: 20px; /* Space below skill bars */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.skill-name {
+  width: 150px; /* Fixed width for skill names */
+  font-size: 16px; /* Font size for skill names */
+}
+
+.progress-bar {
+  flex-grow: 1; /* Allow progress bar to grow and take available space */
+  height: 10px; /* Height of the progress bar */
+  background-color: #e0e0e0; /* Light gray background for the progress bar */
+  border-radius: 5px; /* Rounded corners for the progress bar */
+  overflow: hidden; /* Hide overflow content */
+  margin: 0 15px; /* Space on the left and right of the progress bar */
+}
+
+.progress {
+  height: 100%; /* Full height of the progress bar */
+  background-color: #5e3bee; /* Purple color for the progress */
+  transition: width 1s ease-in-out; /* Smooth transition for width changes */
+}
+
+.skill-percent {
+  width: 50px; /* Fixed width for skill percentage */
+  text-align: right; /* Align text to the right */
+  font-size: 14px; /* Font size for skill percentage */
+}
+
+.non-technical-skills ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.non-technical-skills li {
+  font-size: 16px; /* Font size for list items */
+  margin-bottom: 10px; /* Space below list items */
+  padding: 10px; /* Padding inside list items */
+  background-color: #fff; /* White background for list items */
+  border-radius: 5px; /* Rounded corners for list items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for list items */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.non-technical-skills li:hover {
+  transform: translateX(10px); /* Move list item to the right on hover */
+}
+
+/* Portfolio section */
+.portfolio {
+  padding: 50px 20px; /* Padding around the section */
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.portfolio-grid {
+  display: grid; /* Use grid layout for portfolio items */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
+  gap: 30px; /* Space between portfolio items */
+  margin-top: 30px; /* Space above the grid */
+}
+
+.project-card {
+  background-color: #ffffff; /* White background for project cards */
+  border-radius: 10px; /* Rounded corners for project cards */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for project cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Move card up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.project-card img {
+  width: 100%; /* Make image responsive */
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Cover the image area */
+}
+
+.project-card h3 {
+  font-size: 20px; /* Font size for project titles */
+  margin: 15px 0 10px; /* Space above and below the title */
+  padding: 0 15px; /* Padding inside the card */
+  color: #333; /* Dark text color */
+}
+
+.project-card p {
+  font-size: 14px; /* Font size for project descriptions */
+  line-height: 1.6; /* Line height for readability */
+  padding: 0 15px; /* Padding inside the card */
+  color: #666; /* Gray text color */
+  margin-bottom: 15px; /* Space below the description */
+}
+
+.btn-view-project {
+  display: inline-block; /* Inline block for button styling */
+  margin: 0 15px 15px; /* Margin around the button */
+  padding: 8px 15px; /* Padding inside the button */
+  background-color: #5e3bee; /* Purple background */
+  color: #ffffff; /* White text color */
+  text-decoration: none; /* Remove underline from button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.btn-view-project:hover {
+  background-color: #4c2fcc; /* Darker purple background on hover */
+}
+
+/* Testimonial section */
+.testimonials {
+  padding: 50px 20px; /* Padding around the section */
+  background-color: #f8f8f8; /* Light gray background */
+  text-align: center; /* Center text */
+}
+
+.testimonial-slider {
+  max-width: 800px; /* Maximum width for the slider */
+  margin: 0 auto; /* Center the slider */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Position relative for slider controls */
+}
+
+.testimonial-card {
+  padding: 30px; /* Padding inside each testimonial card */
+  background-color: #ffffff; /* White background for testimonial cards */
+  border-radius: 10px; /* Rounded corners for cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+  margin: 20px; /* Margin around the cards */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.client-image {
+  width: 80px; /* Fixed width for client images */
+  height: 80px; /* Fixed height for client images */
+  border-radius: 50%; /* Round image shape */
+  object-fit: cover; /* Cover the image area */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.testimonial-text {
+  font-style: italic; /* Italicize testimonial text */
+  color: #333; /* Dark text color */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 15px; /* Space below the testimonial text */
+}
+
+.client-name {
+  font-size: 18px; /* Font size for client names */
+  color: #5e3bee; /* Purple text color */
+  margin-bottom: 5px; /* Space below the client name */
+}
+
+.client-position {
+  font-size: 14px; /* Font size for client position */
+  color: #666; /* Gray text color */
+}
+
+.testimonial-nav {
+  margin-top: 20px; /* Space above navigation buttons */
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #5e3bee; /* Purple background for navigation buttons */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 15px; /* Padding inside the button */
+  font-size: 18px; /* Font size for button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 0 10px; /* Margin around the buttons */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #4c2fcc; /* Darker purple background on hover */
+}
+
+/* Contact section */
+.contact {
+  padding: 50px 20px; /* Padding around the section */
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.contact-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between contact info and form */
+  gap: 50px; /* Space between contact info and form */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.contact-info,
+.contact-form {
+  flex: 1; /* Allow each section to grow and take available space */
+}
+
+.contact-info h3 {
+  font-size: 24px; /* Font size for contact info heading */
+  margin-bottom: 20px; /* Space below heading */
+  color: #5e3bee; /* Purple text color */
+}
+
+.contact-info p {
+  margin-bottom: 20px; /* Space below contact info paragraph */
+  line-height: 1.6; /* Line height for readability */
+  color: #333; /* Dark text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Full width for form elements */
+  padding: 10px; /* Padding inside form elements */
+  margin-bottom: 20px; /* Space below form elements */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.contact-form textarea {
+  height: 150px; /* Fixed height for textarea */
+}
+
+.submit-button {
+  background-color: #5e3bee; /* Purple background for submit button */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size for button text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.submit-button:hover {
+  background-color: #4c2fcc; /* Darker purple background on hover */
+}
+
+.social-links {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack social links vertically */
+  align-items: flex-start; /* Align items to the start */
+  gap: 15px; /* Space between social links */
+}
+
+.social-links a {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically in the center */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark text color */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.social-links a:hover {
+  color: #5e3bee; /* Purple text color on hover */
+  transform: translateX(5px); /* Move link to the right on hover */
+}
+
+.social-links i {
+  width: 40px; /* Fixed width for social icons */
+  height: 40px; /* Fixed height for social icons */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 50%; /* Round shape for icons */
+  margin-right: 15px; /* Space to the right of the icon */
+  font-size: 20px; /* Font size for icon */
+  color: #5e3bee; /* Purple icon color */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.social-links a:hover i {
+  background-color: #5e3bee; /* Purple background on hover */
+  color: #fff; /* White icon color on hover */
+}
+
+.social-links span {
+  font-size: 16px; /* Font size for social link text */
+  font-weight: 500; /* Semi-bold font weight */
+}
+
+/* Education section */
+.education {
+  padding: 50px 20px; /* Padding around the section */
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.education-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack education items vertically */
+  gap: 30px; /* Space between education items */
+  max-width: 800px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.education-item {
+  background-color: #ffffff; /* White background for education items */
+  padding: 20px; /* Padding inside the item */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for items */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.education-item:hover {
+  transform: translateY(-5px); /* Move item up on hover */
+}
+
+.education-item h3 {
+  color: #5e3bee; /* Purple text color for headings */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.education-item .institution {
+  font-weight: bold; /* Bold font for institution name */
+  margin-bottom: 5px; /* Space below institution name */
+}
+
+.education-item .year {
+  color: #666; /* Gray color for year */
+  font-style: italic; /* Italicize year text */
+  margin-bottom: 10px; /* Space below year text */
+}
+
+.education-item .description {
+  line-height: 1.6; /* Line height for readability */
+}
+
+/* Footer section */
+.footer {
+  background-color: aliceblue; /* Light blue background */
+  padding: 40px 0; /* Padding around the section */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute space between columns */
+  align-items: flex-start; /* Align items to the start */
+  flex-wrap: wrap; /* Wrap columns if needed */
+}
+
+.footer .column {
+  flex: 1; /* Allow columns to grow and take available space */
+  max-width: 200px; /* Maximum width of columns */
+  margin: 0 20px; /* Margin around columns */
+}
+
+.footer .column h3 {
+  margin-bottom: 20px; /* Space below headings */
+  font-size: 18px; /* Font size for column headings */
+}
+
+.footer .column ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.footer .column ul li {
+  margin-bottom: 10px; /* Space below list items */
+}
+
+.footer .column ul li a {
+  color: #848383; /* Gray text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer .column ul li a:hover {
+  color: black; /* Black text color on hover */
+}
+
+.footer .subscribe {
+  flex: 2; /* Allow the subscribe section to take more space */
+  max-width: 300px; /* Maximum width of the subscribe section */
+  margin: 0 20px; /* Margin around the section */
+}
+
+.footer .subscribe input[type="email"] {
+  padding: 10px; /* Padding inside email input */
+  margin: 10px 0; /* Margin around email input */
+  width: 100%; /* Full width for email input */
+  border: 1px solid #333; /* Dark border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.footer .subscribe button {
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove border */
+  background-color: #5e3bee; /* Purple background */
+  color: #fff; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.footer .subscribe button:hover {
+  background-color: white; /* White background on hover */
+  color: #5e3bee; /* Purple text color on hover */
+  border: 1px solid #5e3bee; /* Purple border on hover */
+}
+
+.footer-bottom {
+  text-align: center; /* Center align text */
+  margin-top: 20px; /* Space above the footer bottom section */
+  padding-top: 20px; /* Padding inside the footer bottom section */
+  border-top: 1px solid #333; /* Border at the top */
+}
+
+.footer-bottom .social-icons {
+  margin-top: 10px; /* Space above social icons */
+}
+
+.footer-bottom .social-icons a {
+  color: #5e3bee; /* Purple color for social icons */
+  margin: 0 10px; /* Space between social icons */
+  font-size: 24px; /* Font size for social icons */
+  text-decoration: none; /* Remove underline from social icons */
+}
+
+.footer-bottom .social-icons a:hover {
+  color: black; /* Black color on hover */
+}
